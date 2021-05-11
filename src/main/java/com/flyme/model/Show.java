@@ -8,18 +8,18 @@ import java.util.Set;
  * @author zzzz76
  */
 public class Show {
-    private int id;
+    private Integer id;
     private String name;
     private Date time;
-    private int programId;
+    private Integer programId;
 
     private Set<Level> levels = new HashSet<>();
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -39,11 +39,11 @@ public class Show {
         this.time = time;
     }
 
-    public int getProgramId() {
+    public Integer getProgramId() {
         return programId;
     }
 
-    public void setProgramId(int programId) {
+    public void setProgramId(Integer programId) {
         this.programId = programId;
     }
 

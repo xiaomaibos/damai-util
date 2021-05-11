@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.arronlong.httpclientutil.HttpClientUtil;
 import com.arronlong.httpclientutil.common.*;
 import com.arronlong.httpclientutil.exception.HttpProcessException;
+import com.flyme.model.Level;
 import com.flyme.model.Program;
 import com.flyme.model.Show;
 import org.apache.http.Header;
@@ -126,6 +127,16 @@ public class DamaiCrawler {
             show.setName(vi.getString("performName"));
             Date istartTime = simpleDateFormat.parse(vi.getString("performBeginDTStr"));
             show.setTime(istartTime);
+
+            JSONArray skus = obj.getJSONObject("perform").getJSONArray("skuList");
+            for (Object sku : skus) {
+                JSONObject sk = (JSONObject)sku;
+                Level level = new Level();
+                level.setName(sk.getString("priceName"));
+                level.setPrice(Integer.valueOf(RegUtil.regFind(sk.getString("price"), "(\\d+)")));
+                level.setLimitCount(Integer.valueOf(sk.getString("salableQuantity")));
+                show.getLevels().add(level);
+            }
             program.getShows().add(show);
         }
     }

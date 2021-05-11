@@ -9,10 +9,10 @@ import java.util.Set;
  */
 public class Program {
 
-    private int id;
+    private Integer id;
     private String title;
-    private int lowPrice;
-    private int highPrice;
+    private Integer lowPrice;
+    private Integer highPrice;
     private Date startTime;
     private Date endTime;
     private String address;
@@ -20,15 +20,15 @@ public class Program {
     private String detail;
     private String notice;
     private String imageUrl;
-    private int cityId;
-    private int categoryId;
+    private Integer cityId;
+    private Integer categoryId;
     private Set<Show> shows = new HashSet<>();
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -40,19 +40,19 @@ public class Program {
         this.title = title;
     }
 
-    public int getLowPrice() {
+    public Integer getLowPrice() {
         return lowPrice;
     }
 
-    public void setLowPrice(int lowPrice) {
+    public void setLowPrice(Integer lowPrice) {
         this.lowPrice = lowPrice;
     }
 
-    public int getHighPrice() {
+    public Integer getHighPrice() {
         return highPrice;
     }
 
-    public void setHighPrice(int highPrice) {
+    public void setHighPrice(Integer highPrice) {
         this.highPrice = highPrice;
     }
 
@@ -112,19 +112,19 @@ public class Program {
         this.imageUrl = imageUrl;
     }
 
-    public int getCityId() {
+    public Integer getCityId() {
         return cityId;
     }
 
-    public void setCityId(int cityId) {
+    public void setCityId(Integer cityId) {
         this.cityId = cityId;
     }
 
-    public int getCategoryId() {
+    public Integer getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(int categoryId) {
+    public void setCategoryId(Integer categoryId) {
         this.categoryId = categoryId;
     }
 

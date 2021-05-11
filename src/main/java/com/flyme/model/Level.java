@@ -5,20 +5,20 @@ package com.flyme.model;
  */
 public class Level {
 
-    private int id;
+    private Integer id;
     private String name;
-    private int price;
-    private int totalCount;
-    private int leftCount;
-    private int limitCount;
+    private Integer price;
+    private Integer totalCount;
+    private Integer leftCount;
+    private Integer limitCount;
     private String seat;
-    private int showId;
+    private Integer showId;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -30,35 +30,35 @@ public class Level {
         this.name = name;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 
-    public int getTotalCount() {
+    public Integer getTotalCount() {
         return totalCount;
     }
 
-    public void setTotalCount(int totalCount) {
+    public void setTotalCount(Integer totalCount) {
         this.totalCount = totalCount;
     }
 
-    public int getLeftCount() {
+    public Integer getLeftCount() {
         return leftCount;
     }
 
-    public void setLeftCount(int leftCount) {
+    public void setLeftCount(Integer leftCount) {
         this.leftCount = leftCount;
     }
 
-    public int getLimitCount() {
+    public Integer getLimitCount() {
         return limitCount;
     }
 
-    public void setLimitCount(int limitCount) {
+    public void setLimitCount(Integer limitCount) {
         this.limitCount = limitCount;
     }
 
@@ -70,11 +70,11 @@ public class Level {
         this.seat = seat;
     }
 
-    public int getShowId() {
+    public Integer getShowId() {
         return showId;
     }
 
-    public void setShowId(int showId) {
+    public void setShowId(Integer showId) {
         this.showId = showId;
     }
 }
