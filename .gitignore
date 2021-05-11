@@ -1,0 +1,28 @@
+#Created by .ignore support plugin (hsz.mobi)
+*.class
+*.log
+# Package Files #
+*.war
+*.ear
+#maven
+*/target
+target
+#eclipse
+*/.settings
+.settings
+*/.project
+.project
+*/.classpath
+.classpath
+/derby.log
+*/appLogs
+appLogs
+# IntelliJ Idea
+.idea/
+out/
+*.ipr
+*.iws
+*.iml
+*/bin
+**/bin
+classes/
